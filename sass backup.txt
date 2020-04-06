@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* html, body {
+    overflow: hidden;
+} */
+
+
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.section1 {
+    border: 2px solid yellow;
+    display: flex;
+    align-items: flex-start;
+    // background: #18191A;
+    background-image: url(./imgdemo1.jpg);
+    background-color: #717171;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .headline {
+        // border: 2px solid red;
+        width: 80%;
+        height: 30%;
+        margin-top: 80px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        div span {
+            color: yellowgreen;
+            font-style: italic;
+            font-size: 35px;
+        }
+    }
+
+    .tagline {
+        // border: 2px solid white;
+        margin-top: 30px;
+        height: 35%;
+        width: 100%;
+        letter-spacing: 1.5px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .tag {
+            // border: 2px solid white;
+            color: aliceblue;
+            width: 80%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+        }
+
+        .hello {
+            // border: 2px solid yellow;
+            width: 100%;
+            color: aliceblue;
+            display: flex;
+            font-size: 13px;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    
+}
+
+.headline div {
+    /* border: 2px solid blue; */
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: blue;
+    color: aliceblue;
+}
+
+.headline p {
+    /* border: 2px solid yellow; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10.5px;
+    letter-spacing: 3px;
+    width: 70%;
+    margin-top: 30px;
+    color: aliceblue;
+}
+
+/* ======================  SECTION 2 =================================================== */
+
+.section2 {
+    /* border: 2px solid aqua; */
+    background-color: #F9F9FA;
+    display: flex;
+    justify-content: center;
+}
+
+.headline2 {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;   
+}
+
+.ono {
+    /* border: 2px solid blue */
+    font-size: 27px;
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 7px;
+    border-top: 0.5px solid black;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    margin-top: 20px;
+}
+
+.onotag {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    border-bottom: 0.5px solid black;
+}
+
+.title1 {
+    /* border: 2px solid green; */
+    display: flex;
+    padding: 35px 0;
+    /* flex-wrap: wrap; */
+    font-size: 19px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+}
+
+.title1 span {
+    color: red;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* .image1 {
+    border: 2px solid blue;
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    height: 200px;
+    background-image: url(./image1.jpg);
+} */
+
+/* Slideshow container */
+.slideshow-container {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    margin: auto;
+    // border: 2px solid orange;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+/* Hide the images by default */
+.mySlides {
+display: hidden;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+/* padding: 8px 12px; */
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+/* padding: 8px 12px; */
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+/* .dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+} */
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+.bulletpoint {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex;
+    padding: 25px 0;
+    /* border: 2px solid orange; */
+}
+
+div li {
+    list-style: none;
+    border-left: 2px solid red;
+    padding-left: 10px;
+}
+
+.section3 {
+    display: flex;
+    // background: purple;
+    border: 2px solid black;
+
+    .headline3 {
+        // border: 2px solid green;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .project-title {
+            // border: 2px solid red;
+            margin: 70px 0 200px 0;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 27px;
+            letter-spacing: 3px;
+        }
+        
+        .project-list {
+            // border: 2px solid blue;
+            font-size: 45px;
+            display: flex;
+            justify-content: flex-start;
+            width: 30%;
+            height: 7%;
+            align-items: center;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            font-weight: 600;
+            padding: 20px 40px;
+        }
+    }
+}
+
+.section4 {
+    // border: 2px solid aqua;
+    height: 1500px;
+
+    .headline4 {
+        // border: 2px solid red;
+        margin: 20px 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #e6e4e4;
+    }
+}
+
+footer {
+    border-top: 0.5px dashed grey;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    background: white;
+
+    .contact {
+        // border: 2px solid yellowgreen;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-left: 40px;
+        font-size: 14px;
+
+        div span {
+            border-bottom: 2px solid red;
+            height: 20px;
+            width: 100%;
+            padding: 10px 0;
+
+        }
+    }
+}
+
+    .icons{
+        // border: 2px solid orange;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        padding-right: 40px;
+    }
+}
